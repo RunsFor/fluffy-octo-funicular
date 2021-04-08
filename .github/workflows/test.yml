@@ -1,0 +1,10 @@
+name: Install libcurl on fresh ubuntu runner
+
+on:
+   push:
+
+jobs:
+  shell:
+    runs-on: [ubuntu-latest]
+    steps:
+      - run: apt install -y libcurl4-openssl-dev
